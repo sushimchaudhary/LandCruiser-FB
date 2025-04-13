@@ -5,6 +5,7 @@ import TourCard from '@/search/TourCard';
 import React from 'react';
 import toursDetails from './toursdetails';
 import { Col, Row, Container } from 'reactstrap';
+import ServicesSection from '@/services/servicesSection';
 
 const Tours = () => {
   return (
@@ -13,7 +14,7 @@ const Tours = () => {
 
       <section className="py-6">
         <Container>
-          <SearchBar />
+          <SearchBar />          
         </Container>
       </section>
 

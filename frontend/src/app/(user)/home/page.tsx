@@ -1,14 +1,16 @@
 "use client";
 
 import React from "react";
-import SearchBar from "@/app/search/searchBar";
+
 import Image from "next/image";
 import { Col, Container, Row } from "reactstrap";
-import ServicesSection from "@/app/services/servicesSection";
-import GallerySection from "@/app/gallery/gallery";
+import ServicesSection from "@/services/servicesSection";
+import GallerySection from "@/gallery/gallery";
 
-import NewsLetter from "@/app/search/newsLetter";
-import Testimonial from "@/app/testimonial/testimonial";
+
+import Testimonial from "@/testimonial/testimonial";
+import SearchBar from "@/search/searchBar";
+import NewsLetter from "@/search/newsLetter";
 
 // Define the Home component using React.FC (Functional Component)
 const Home: React.FC = () => {

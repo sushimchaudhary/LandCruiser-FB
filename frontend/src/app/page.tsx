@@ -5,10 +5,12 @@ import Image from 'next/image';
 
 // Import custom components
 import Header from './(user)/header/page';
-import SearchBar from './search/searchBar';
-import ServicesSection from './services/servicesSection';
-import Testimonial from './testimonial/testimonial';
-import NewsLetter from './search/newsLetter';
+
+import ServicesSection from '../services/servicesSection';
+import Testimonial from '../testimonial/testimonial';
+import SearchBar from '@/search/searchBar';
+import NewsLetter from '@/search/newsLetter';
+
 
 // Define Home component
 const Home: React.FC = () => {

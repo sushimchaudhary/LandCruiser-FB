@@ -29,7 +29,7 @@ const ForgotPassword = () => {
 
           <button
             type="submit"
-            className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg"
+            className="w-full bg-red-500 hover:bg-red-600 text-white font-bold cursor-pointer py-2 px-4 rounded-lg"
           >
             Send Reset Link
           </button>
@@ -39,7 +39,7 @@ const ForgotPassword = () => {
             <button
               type="button"
               onClick={() => router.push('/login')}
-              className="text-red-400 hover:text-red-600 font-semibold"
+              className="text-red-400 hover:text-red-600 cursor-pointer font-semibold"
             >
               Sign In
             </button>

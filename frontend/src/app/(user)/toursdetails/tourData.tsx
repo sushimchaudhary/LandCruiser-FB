@@ -1,0 +1,116 @@
+const tourList = [
+  {
+    id: 1,
+    title: "Everest Base Camp",
+    image: "/images/everest.jpeg",
+    price: 999,
+    location: "Nepal",
+    featured: true,
+    description: "Embark on an unforgettable journey to the foothills of the world’s highest mountain. Experience rugged trails, Sherpa culture, and awe-inspiring Himalayan views.",
+    reviews: [
+      { id: 'r1', userId: 'Ram', rating: 5, comment: 'Amazing trek!' },
+      { id: 'r2', userId: 'Ajay', rating: 4, comment: 'Great experience.' },
+      { id: 'r3', userId: 'Hari', rating: 5, comment: 'Breathtaking views.' },
+    ],
+  },
+  {
+    id: 2,
+    title: "Annapurna Circuit Trek",
+    image: "/images/annapurna.jpeg",
+    price: 850,
+    location: "Nepal",
+    featured: false,
+    description: "Circle the majestic Annapurna massif while traversing diverse landscapes, ancient villages, and high mountain passes.",
+    reviews: [
+      { id: 'r4', userId: 'Sita', rating: 4, comment: 'Challenging but beautiful.' },
+      { id: 'r5', userId: 'Priyanka', rating: 3, comment: 'Tough trek!' },
+    ],
+  },
+  {
+    id: 3,
+    title: "Chitwan Jungle Safari",
+    image: "/images/chitwan.jpeg",
+    price: 300,
+    location: "Nepal",
+    featured: true,
+    description: "Dive into the lush jungles of Chitwan, home to rhinos, tigers, and exotic bird species. An exciting adventure in Nepal’s first national park!",
+    reviews: [
+      { id: 'r6', userId: 'RamDash', rating: 4, comment: 'Saw a rhino! 🦏' },
+      { id: 'r7', userId: 'Roshan', rating: 5, comment: 'Amazing wildlife.' },
+    ],
+  },
+  {
+    id: 4,
+    title: "Pokhara City Tour",
+    image: "/images/pokhara.jpeg",
+    price: 150,
+    location: "Nepal",
+    featured: true,
+    description: "Relax by the serene Phewa Lake, explore colorful streets, and admire stunning views of the Annapurna range in Nepal’s adventure capital.",
+    reviews: [
+      { id: 'r8', userId: 'Ramlal', rating: 4, comment: 'Peaceful lakeside.' },
+    ],
+  },
+  {
+    id: 5,
+    title: "Lumbini Pilgrimage Tour",
+    image: "/images/lumbini.jpeg",
+    price: 180,
+    location: "Nepal",
+    featured: true,
+    description: "Step into history at Lumbini, the birthplace of Lord Buddha. Explore sacred gardens, monasteries, and ancient relics on this spiritual journey.",
+    reviews: [
+      { id: 'r9', userId: 'Sangita', rating: 5, comment: 'Spiritual journey.' },
+    ],
+  },
+  {
+    id: 6,
+    title: "Rara Lake Adventure",
+    image: "/images/rara.jpeg",
+    price: 950,
+    location: "Nepal",
+    featured: true,
+    description: "Discover the pristine beauty of Rara Lake, Nepal’s largest lake, surrounded by snow-capped peaks and untouched wilderness.",
+    reviews: [
+      { id: 'r10', userId: 'Krishna', rating: 5, comment: 'Unbelievable scenery!' },
+    ],
+  },
+  {
+    id: 7,
+    title: "Muktinath Temple Darshan",
+    image: "/images/muktinath.jpg",
+    price: 450,
+    location: "Nepal",
+    featured: true,
+    description: "A sacred pilgrimage to Muktinath Temple, nestled high in the Himalayas. Experience divine tranquility and panoramic mountain views.",
+    reviews: [
+      { id: 'r11', userId: 'Rohan', rating: 4, comment: 'Religious and beautiful.' },
+    ],
+  },
+  {
+    id: 8,
+    title: "Ilam Tea Garden Experience",
+    image: "/images/ilam.jpeg",
+    price: 220,
+    location: "Nepal",
+    featured: true,
+    description: "Wander through endless green tea gardens, enjoy fresh tea tasting, and soak in the misty hills of Ilam — Nepal’s tea capital.",
+    reviews: [
+      { id: 'r12', userId: 'Raju', rating: 4, comment: 'Soothing and green.' },
+    ],
+  },
+  {
+    id: 9,
+    title: "Bandipur Cultural Retreat",
+    image: "/images/bandipur.webp",
+    price: 275,
+    location: "Nepal",
+    featured: true,
+    description: "A charming hilltop town rich in culture and heritage, Bandipur offers cobbled streets, ancient temples, and breathtaking vistas.",
+    reviews: [
+      { id: 'r13', userId: 'Bishal', rating: 4, comment: 'Lovely heritage town.' },
+    ],
+  },
+];
+
+export default tourList;

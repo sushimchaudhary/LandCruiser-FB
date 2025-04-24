@@ -2,10 +2,12 @@
 
 import { Container, Col, Row } from 'reactstrap';
 import ServiceList from './serviceList';
-import FeaturedTours from '@/app/featured-tours/featuredTours';
+
 import { Sparkles, Globe, Compass } from 'lucide-react'; // Lucide icons
 import { Button } from '@/components/ui/button';
 import React from 'react'; // (Important for TSX)
+import FeaturedTours from '@/featured-tours/featuredTours';
+
 
 // Define a functional component
 const ServicesSection: React.FC = () => {

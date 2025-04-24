@@ -17,7 +17,10 @@ const navLinks: NavLink[] = [
   { path: "/home", display: "Home" },
   { path: "/about", display: "About" },
   { path: "/tours", display: "Tours" },
+  { path: "/booking", display: "Booking" },
+  
 ];
+
 
 const Header: React.FC = () => {
   // State to track if mobile menu is open
@@ -25,6 +28,7 @@ const Header: React.FC = () => {
 
   // Ref to access the header element
   const headerRef = useRef<HTMLElement>(null);
+  
 
   useEffect(() => {
     // Function to make header sticky after scrolling
@@ -121,10 +125,10 @@ const Header: React.FC = () => {
           {/* Mobile Login/Register Buttons */}
           <div className="mt-4 flex flex-col space-y-2">
             <Button className="bg-red-600 hover:bg-red-500 font-bold text-white text-xl cursor-pointer">
-              <Link href="/login">Login</Link>
+              <Link href="/auth/login">Login</Link>
             </Button>
             <Button className="bg-blue-600 hover:bg-blue-500 font-bold text-white text-xl cursor-pointer">
-              <Link href="/register">Register</Link>
+              <Link href="/auth/register">Register</Link>
             </Button>
           </div>
         </div>

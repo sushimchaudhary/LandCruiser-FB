@@ -41,17 +41,17 @@ const Footer: React.FC = () => {
               <h3 className="font-semibold text-lg">Quick Links</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/home" className="hover:text-gray-400">
+                  <Link href="/home" className="hover:text-red-500">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="hover:text-gray-400">
+                  <Link href="/about" className="hover:text-red-500">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/tours" className="hover:text-gray-400">
+                  <Link href="/tours" className="hover:text-red-500">
                     Tours
                   </Link>
                 </li>

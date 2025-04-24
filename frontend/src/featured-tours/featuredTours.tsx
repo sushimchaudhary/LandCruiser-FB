@@ -1,9 +1,13 @@
 'use client';
 
 
-import TourCard from '@/app/search/TourCard';
-import React from 'react';
-import tourList from '../toursdetails/tourData/page';
+
+import tourList from "@/app/(user)/toursdetails/tourData";
+import TourCard from "@/search/TourCard";
+import React from "react";
+
+
+
 
 
 

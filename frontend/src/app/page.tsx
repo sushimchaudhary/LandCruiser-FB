@@ -8,8 +8,8 @@ import Header from './(user)/header/page';
 
 import ServicesSection from '../services/servicesSection';
 import Testimonial from '../testimonial/testimonial';
-import SearchBar from '@/search/searchBar';
-import NewsLetter from '@/search/newsLetter';
+import SearchBar from '@/app/search/searchBar';
+import NewsLetter from '@/app/search/newsLetter';
 
 
 // Define Home component

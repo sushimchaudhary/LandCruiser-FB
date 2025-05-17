@@ -7,6 +7,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import ReduxProvider from "@/lib/redux/reduxProvider";
 import Footer from "./(user)/footer/page";
+import { AuthContextProvider } from "@/context/AuthContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +30,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ReduxProvider>
-          {children}
-        </ReduxProvider>
+        <AuthContextProvider>
+         <ReduxProvider>
+           {children}
+         </ReduxProvider>
+        </AuthContextProvider>
 
         <Toaster />
        

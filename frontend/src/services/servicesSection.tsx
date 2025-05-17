@@ -6,7 +6,7 @@ import ServiceList from './serviceList';
 import { Sparkles, Globe, Compass } from 'lucide-react'; // Lucide icons
 import { Button } from '@/components/ui/button';
 import React from 'react'; // (Important for TSX)
-import FeaturedTours from '@/featured-tours/featuredTours';
+import FeaturedTours from '@/app/featured-tours/featuredTours';
 
 
 // Define a functional component

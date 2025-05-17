@@ -1,12 +1,10 @@
 'use client';
 import React, {useState, useEffect} from 'react';
 
-import CommanSection from '@/search/commanSection';
-import SearchBar from '@/search/searchBar';
-
-
-import TourCard from '@/search/TourCard';
-import NewsLetter from '@/search/newsLetter';
+import CommanSection from '@/app/search/commanSection';
+import SearchBar from '@/app/search/searchBar';
+import TourCard from '@/app/search/TourCard';
+import NewsLetter from '@/app/search/newsLetter';
 import tourList from '../toursdetails/tourData';
 
 

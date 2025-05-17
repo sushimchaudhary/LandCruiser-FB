@@ -9,8 +9,8 @@ import GallerySection from "@/gallery/gallery";
 
 
 import Testimonial from "@/testimonial/testimonial";
-import SearchBar from "@/search/searchBar";
-import NewsLetter from "@/search/newsLetter";
+import SearchBar from "@/app/search/searchBar";
+import NewsLetter from "@/app/search/newsLetter";
 
 // Define the Home component using React.FC (Functional Component)
 const Home: React.FC = () => {

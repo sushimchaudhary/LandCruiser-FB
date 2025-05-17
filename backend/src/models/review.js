@@ -23,8 +23,10 @@ const reviewSchema = new mongoose.Schema(
       required: [true, "Comment is required"],
     },
   },
-  { timestamps: true }  // Automatically adds createdAt and updatedAt
+  { timestamps: true }
 );
 
-// Export the Review Model
+// Prevent duplicate reviews from the same user for the same tour
+reviewSchema.index({ tour: 1, user: 1 }, { unique: true });
+
 export default mongoose.model("Review", reviewSchema);

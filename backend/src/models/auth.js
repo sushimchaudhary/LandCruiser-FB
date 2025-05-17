@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
+import bcrypt from 'bcryptjs';
 
-const authSchema = new mongoose.Schema(
+const userSchema = new mongoose.Schema(
   {
     fullName: {
       type: String,
@@ -8,40 +9,40 @@ const authSchema = new mongoose.Schema(
     },
     email: {
       type: String,
-      required: [true, 'Email is required'],
+      required: true,
       unique: true,
       lowercase: true,
       trim: true,
     },
     phoneNumber: {
       type: String,
-      required: [true, 'Phone number is required'],
+      required: true,
       unique: true,
     },
     password: {
       type: String,
-      required: [true, 'Password is required'],
+      required: true,
+      minlength: 8,
     },
-    // Optional: Store password reset token, expiration for password recovery
-    resetToken: {
+    role: {
       type: String,
-      default: null,
+      enum: ['user', 'admin'],
+      default: 'user',
     },
-    resetTokenExpiration: {
-      type: Date,
-      default: null,
+    status: {
+      type: String,
+      enum: ['active', 'inactive', 'banned'],
+      default: 'active',
     },
   },
   { timestamps: true }
 );
 
-// Virtual ID
-authSchema.virtual('id').get(function () {
-  return this._id.toHexString();
+// Hash password before save
+userSchema.pre('save', async function (next) {
+  if (!this.isModified('password')) return next();
+  this.password = await bcrypt.hash(this.password, 12);
+  next();
 });
 
-authSchema.set('toJSON', {
-  virtuals: true,
-});
-
-export default mongoose.model('Auth', authSchema);
+export default mongoose.model('User', userSchema);
